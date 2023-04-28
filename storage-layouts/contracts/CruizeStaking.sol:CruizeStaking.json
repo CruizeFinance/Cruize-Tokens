@@ -1,0 +1,112 @@
+{
+  "storage": [
+    {
+      "astId": 1549,
+      "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_address"
+    },
+    {
+      "astId": 7742,
+      "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+      "label": "cruizeToken",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_contract(IERC20)2948"
+    },
+    {
+      "astId": 7745,
+      "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+      "label": "armadaToken",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_contract(IMintable)10638"
+    },
+    {
+      "astId": 7747,
+      "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+      "label": "armadaPerBlock",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 7749,
+      "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+      "label": "accArmadaPerShare",
+      "offset": 0,
+      "slot": "4",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 7754,
+      "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+      "label": "userInfo",
+      "offset": 0,
+      "slot": "5",
+      "type": "t_mapping(t_address,t_struct(UserInfo)7739_storage)"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_contract(IERC20)2948": {
+      "encoding": "inplace",
+      "label": "contract IERC20",
+      "numberOfBytes": "20"
+    },
+    "t_contract(IMintable)10638": {
+      "encoding": "inplace",
+      "label": "contract IMintable",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_address,t_struct(UserInfo)7739_storage)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => struct CruizeStaking.UserInfo)",
+      "numberOfBytes": "32",
+      "value": "t_struct(UserInfo)7739_storage"
+    },
+    "t_struct(UserInfo)7739_storage": {
+      "encoding": "inplace",
+      "label": "struct CruizeStaking.UserInfo",
+      "members": [
+        {
+          "astId": 7734,
+          "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+          "label": "time",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 7736,
+          "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+          "label": "amount",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 7738,
+          "contract": "contracts/CruizeStaking.sol:CruizeStaking",
+          "label": "rewardDebt",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "96"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

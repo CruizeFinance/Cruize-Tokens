@@ -1,0 +1,244 @@
+{
+  "storage": [
+    {
+      "astId": 1549,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_address"
+    },
+    {
+      "astId": 2240,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "_status",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 8129,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "totalLockedUpRewards",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 8144,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "cooldownDuration",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 8147,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "totalLockedVestingAmount",
+      "offset": 0,
+      "slot": "4",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 8150,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "vestingDuration",
+      "offset": 0,
+      "slot": "5",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 8153,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "tierLevels",
+      "offset": 0,
+      "slot": "6",
+      "type": "t_array(t_uint256)dyn_storage"
+    },
+    {
+      "astId": 8156,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "tierPercents",
+      "offset": 0,
+      "slot": "7",
+      "type": "t_array(t_uint256)dyn_storage"
+    },
+    {
+      "astId": 8160,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "poolInfo",
+      "offset": 0,
+      "slot": "8",
+      "type": "t_array(t_struct(PoolInfo)8127_storage)dyn_storage"
+    },
+    {
+      "astId": 8164,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "claimedAmounts",
+      "offset": 0,
+      "slot": "9",
+      "type": "t_mapping(t_address,t_uint256)"
+    },
+    {
+      "astId": 8168,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "unlockedVestingAmounts",
+      "offset": 0,
+      "slot": "10",
+      "type": "t_mapping(t_address,t_uint256)"
+    },
+    {
+      "astId": 8172,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "lastVestingUpdateTimes",
+      "offset": 0,
+      "slot": "11",
+      "type": "t_mapping(t_address,t_uint256)"
+    },
+    {
+      "astId": 8179,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "userInfo",
+      "offset": 0,
+      "slot": "12",
+      "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)8115_storage))"
+    },
+    {
+      "astId": 8183,
+      "contract": "contracts/TokenFarm.sol:TokenFarm",
+      "label": "lockedVestingAmounts",
+      "offset": 0,
+      "slot": "13",
+      "type": "t_mapping(t_address,t_uint256)"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_array(t_contract(IComplexRewarder)10507)dyn_storage": {
+      "base": "t_contract(IComplexRewarder)10507",
+      "encoding": "dynamic_array",
+      "label": "contract IComplexRewarder[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_struct(PoolInfo)8127_storage)dyn_storage": {
+      "base": "t_struct(PoolInfo)8127_storage",
+      "encoding": "dynamic_array",
+      "label": "struct TokenFarm.PoolInfo[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_uint256)dyn_storage": {
+      "base": "t_uint256",
+      "encoding": "dynamic_array",
+      "label": "uint256[]",
+      "numberOfBytes": "32"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(IComplexRewarder)10507": {
+      "encoding": "inplace",
+      "label": "contract IComplexRewarder",
+      "numberOfBytes": "20"
+    },
+    "t_contract(IMintable)10638": {
+      "encoding": "inplace",
+      "label": "contract IMintable",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_address,t_struct(UserInfo)8115_storage)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => struct TokenFarm.UserInfo)",
+      "numberOfBytes": "32",
+      "value": "t_struct(UserInfo)8115_storage"
+    },
+    "t_mapping(t_address,t_uint256)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => uint256)",
+      "numberOfBytes": "32",
+      "value": "t_uint256"
+    },
+    "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)8115_storage))": {
+      "encoding": "mapping",
+      "key": "t_uint256",
+      "label": "mapping(uint256 => mapping(address => struct TokenFarm.UserInfo))",
+      "numberOfBytes": "32",
+      "value": "t_mapping(t_address,t_struct(UserInfo)8115_storage)"
+    },
+    "t_struct(PoolInfo)8127_storage": {
+      "encoding": "inplace",
+      "label": "struct TokenFarm.PoolInfo",
+      "members": [
+        {
+          "astId": 8118,
+          "contract": "contracts/TokenFarm.sol:TokenFarm",
+          "label": "cruizeToken",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_contract(IMintable)10638"
+        },
+        {
+          "astId": 8120,
+          "contract": "contracts/TokenFarm.sol:TokenFarm",
+          "label": "totalLp",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 8124,
+          "contract": "contracts/TokenFarm.sol:TokenFarm",
+          "label": "rewarders",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_array(t_contract(IComplexRewarder)10507)dyn_storage"
+        },
+        {
+          "astId": 8126,
+          "contract": "contracts/TokenFarm.sol:TokenFarm",
+          "label": "enableCooldown",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_bool"
+        }
+      ],
+      "numberOfBytes": "128"
+    },
+    "t_struct(UserInfo)8115_storage": {
+      "encoding": "inplace",
+      "label": "struct TokenFarm.UserInfo",
+      "members": [
+        {
+          "astId": 8112,
+          "contract": "contracts/TokenFarm.sol:TokenFarm",
+          "label": "amount",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 8114,
+          "contract": "contracts/TokenFarm.sol:TokenFarm",
+          "label": "startTimestamp",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "64"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

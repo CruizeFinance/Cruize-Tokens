@@ -1,0 +1,126 @@
+{
+  "storage": [
+    {
+      "astId": 2299,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_balances",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_mapping(t_address,t_uint256)"
+    },
+    {
+      "astId": 2305,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_allowances",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+    },
+    {
+      "astId": 2307,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_totalSupply",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 2309,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_name",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_string_storage"
+    },
+    {
+      "astId": 2311,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_symbol",
+      "offset": 0,
+      "slot": "4",
+      "type": "t_string_storage"
+    },
+    {
+      "astId": 1549,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "5",
+      "type": "t_address"
+    },
+    {
+      "astId": 3040,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_nonces",
+      "offset": 0,
+      "slot": "6",
+      "type": "t_mapping(t_address,t_struct(Counter)3864_storage)"
+    },
+    {
+      "astId": 3048,
+      "contract": "contracts/CruizeToken.sol:CruizeToken",
+      "label": "_PERMIT_TYPEHASH_DEPRECATED_SLOT",
+      "offset": 0,
+      "slot": "7",
+      "type": "t_bytes32"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_bytes32": {
+      "encoding": "inplace",
+      "label": "bytes32",
+      "numberOfBytes": "32"
+    },
+    "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => mapping(address => uint256))",
+      "numberOfBytes": "32",
+      "value": "t_mapping(t_address,t_uint256)"
+    },
+    "t_mapping(t_address,t_struct(Counter)3864_storage)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => struct Counters.Counter)",
+      "numberOfBytes": "32",
+      "value": "t_struct(Counter)3864_storage"
+    },
+    "t_mapping(t_address,t_uint256)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => uint256)",
+      "numberOfBytes": "32",
+      "value": "t_uint256"
+    },
+    "t_string_storage": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_struct(Counter)3864_storage": {
+      "encoding": "inplace",
+      "label": "struct Counters.Counter",
+      "members": [
+        {
+          "astId": 3863,
+          "contract": "contracts/CruizeToken.sol:CruizeToken",
+          "label": "_value",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "32"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}

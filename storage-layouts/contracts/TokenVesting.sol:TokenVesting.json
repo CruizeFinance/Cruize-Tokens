@@ -1,0 +1,254 @@
+{
+  "storage": [
+    {
+      "astId": 138,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "_initialized",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint8"
+    },
+    {
+      "astId": 141,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "_initializing",
+      "offset": 1,
+      "slot": "0",
+      "type": "t_bool"
+    },
+    {
+      "astId": 1540,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_array(t_uint256)50_storage"
+    },
+    {
+      "astId": 10,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "_owner",
+      "offset": 0,
+      "slot": "51",
+      "type": "t_address"
+    },
+    {
+      "astId": 130,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "52",
+      "type": "t_array(t_uint256)49_storage"
+    },
+    {
+      "astId": 321,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "_paused",
+      "offset": 0,
+      "slot": "101",
+      "type": "t_bool"
+    },
+    {
+      "astId": 426,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "102",
+      "type": "t_array(t_uint256)49_storage"
+    },
+    {
+      "astId": 441,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "_status",
+      "offset": 0,
+      "slot": "151",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 499,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "__gap",
+      "offset": 0,
+      "slot": "152",
+      "type": "t_array(t_uint256)49_storage"
+    },
+    {
+      "astId": 9971,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "epoche",
+      "offset": 0,
+      "slot": "201",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 9974,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "MAXIMUM_LOCK_PERIOD",
+      "offset": 0,
+      "slot": "202",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 9978,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "epocheStartingTime",
+      "offset": 0,
+      "slot": "203",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 9994,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "cruizeToken",
+      "offset": 0,
+      "slot": "204",
+      "type": "t_contract(IMintable)10638"
+    },
+    {
+      "astId": 9997,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "armadaToken",
+      "offset": 0,
+      "slot": "205",
+      "type": "t_contract(IMintable)10638"
+    },
+    {
+      "astId": 10003,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "vestingSchedules",
+      "offset": 0,
+      "slot": "206",
+      "type": "t_mapping(t_address,t_array(t_struct(VestingSchedule)9991_storage)dyn_storage)"
+    },
+    {
+      "astId": 10005,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "vestingSchedulesTotalAmount",
+      "offset": 0,
+      "slot": "207",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 10009,
+      "contract": "contracts/TokenVesting.sol:TokenVesting",
+      "label": "holdersVestingCount",
+      "offset": 0,
+      "slot": "208",
+      "type": "t_mapping(t_address,t_uint256)"
+    }
+  ],
+  "types": {
+    "t_address": {
+      "encoding": "inplace",
+      "label": "address",
+      "numberOfBytes": "20"
+    },
+    "t_array(t_struct(VestingSchedule)9991_storage)dyn_storage": {
+      "base": "t_struct(VestingSchedule)9991_storage",
+      "encoding": "dynamic_array",
+      "label": "struct TokenVesting.VestingSchedule[]",
+      "numberOfBytes": "32"
+    },
+    "t_array(t_uint256)49_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[49]",
+      "numberOfBytes": "1568"
+    },
+    "t_array(t_uint256)50_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[50]",
+      "numberOfBytes": "1600"
+    },
+    "t_bool": {
+      "encoding": "inplace",
+      "label": "bool",
+      "numberOfBytes": "1"
+    },
+    "t_contract(IMintable)10638": {
+      "encoding": "inplace",
+      "label": "contract IMintable",
+      "numberOfBytes": "20"
+    },
+    "t_mapping(t_address,t_array(t_struct(VestingSchedule)9991_storage)dyn_storage)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => struct TokenVesting.VestingSchedule[])",
+      "numberOfBytes": "32",
+      "value": "t_array(t_struct(VestingSchedule)9991_storage)dyn_storage"
+    },
+    "t_mapping(t_address,t_uint256)": {
+      "encoding": "mapping",
+      "key": "t_address",
+      "label": "mapping(address => uint256)",
+      "numberOfBytes": "32",
+      "value": "t_uint256"
+    },
+    "t_struct(VestingSchedule)9991_storage": {
+      "encoding": "inplace",
+      "label": "struct TokenVesting.VestingSchedule",
+      "members": [
+        {
+          "astId": 9980,
+          "contract": "contracts/TokenVesting.sol:TokenVesting",
+          "label": "beneficiary",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+        },
+        {
+          "astId": 9982,
+          "contract": "contracts/TokenVesting.sol:TokenVesting",
+          "label": "start",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 9984,
+          "contract": "contracts/TokenVesting.sol:TokenVesting",
+          "label": "end",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 9986,
+          "contract": "contracts/TokenVesting.sol:TokenVesting",
+          "label": "amountTotal",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 9988,
+          "contract": "contracts/TokenVesting.sol:TokenVesting",
+          "label": "released",
+          "offset": 0,
+          "slot": "4",
+          "type": "t_uint256"
+        },
+        {
+          "astId": 9990,
+          "contract": "contracts/TokenVesting.sol:TokenVesting",
+          "label": "burned",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_uint256"
+        }
+      ],
+      "numberOfBytes": "192"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    },
+    "t_uint8": {
+      "encoding": "inplace",
+      "label": "uint8",
+      "numberOfBytes": "1"
+    }
+  }
+}
